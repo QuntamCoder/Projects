@@ -1,0 +1,432 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+/***************************
+category
+***************************/
+ 
+:root{/*thiscode is using in various places so its can't be explain*/
+    --heading:white;
+    --white:#fff;
+    --home-bg:#e9f2f7;
+    --btn-bg:#a6efe3;
+    --para:aqua;/*inner categories color*/
+    --bg-1:#f1faf9 ;
+    --bg-2:#f6f7f9;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    --gradinet:linear-gradient(to right, #3bbca7, );
+}
+html{/*bg color of webpage and font displaying and all*/
+    font-size: 62.5%;
+    overflow-x: hidden;
+    background-color:black;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}    
+
+
+h1, h2, p, h4{
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    color:black;
+    font-size: 6rem;
+    font-weight: 600;
+}
+
+p{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+p{
+    color: var(--para);
+    font-size: 2.7rem;
+    line-height: 1.6;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/***************************
+Reusable Codes
+***************************/
+.section{
+    padding: 9rem 10;/*footer down*/
+}
+
+.primary-heading{           /* logion paage name middle*/
+    font-size: 4.5rem;
+    text-align: center;
+    font-family: cursive;
+}
+/***************************
+Header
+***************************/
+.header{
+    height: 8rem;
+    padding: 0 4.8rem;
+    background: var(--home-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s linear;
+    background-color: rgb(6, 6, 6);
+    
+    
+}
+/* border of navbar get in dfull line*/
+
+
+ .logo{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-right:20px;
+}
+.logo img{
+    height: 5rem;/*logo hight*/
+}
+ .logo span{
+    display: flex;/*logo things color and all*/
+    align-items: center;
+    font-size: 3rem;
+    color:#3bbca7;
+    font-weight: 600;/*logo name zise and color*/
+    font-family: 'Cedarville Cursive', cursive;
+}
+.credits{
+    font-size: 2rem;
+    color: var(--para);
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid var(--heading);
+    margin-top: 45px;
+}
+.pop{
+    background: #000;
+    padding-bottom: 00px;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color:#000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+section {
+    display: flex;
+    min-height: 120vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, grey,black);
+    /* padding-bottom: 40px; */
+}
+
+section .colour {
+    position: absolute;
+    filter: blur(150px);
+}
+
+section .colour:nth-child(1) {
+    top: -750px;
+    width: 500px;
+    height: 500px;
+    background:#3bbca7;
+}
+
+section .colour:nth-child(2) {
+    left: 100px;
+    width: 500px;
+    height: 500px;
+    bottom: -150px;
+    background: #ffa500;
+}
+
+section .colour:nth-child(3) {
+    right: 100px;
+    bottom: 50px;
+    width: 300px;
+    height: 300px;
+    background: #2b67f3;
+}
+
+.box {
+    position: relative;
+}
+
+.box .square {
+    position: absolute;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.1);
+    animation-delay: calc(-1s * var(--i));
+    animation: animate 10s linear infinite;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        transform: translateY(-40px);
+    }
+
+    50% {
+        transform: translateY(40px);
+    }
+}
+
+.box .square:nth-child(1) {
+    top: -50px;
+    left: -60px;
+    width: 100px;
+    height: 100px;
+}
+
+.box .square:nth-child(2) {
+    z-index: 2;
+    top: 150px;
+    left: -100px;
+    width: 120px;
+    height: 120px;
+}
+
+.box .square:nth-child(3) {
+    z-index: 2;
+    width: 80px;
+    height: 80px;
+    right: -50px;
+    bottom: -60px;
+}
+
+.box .square:nth-child(4) {
+    left: 100px;
+    width: 50px;
+    height: 50px;
+    bottom: -80px;
+}
+
+.box .square:nth-child(5) {
+    top: -80px;
+    left: 140px;
+    width: 60px;
+    height: 60px;
+}
+
+.container {
+    width: 400px;
+    display: flex;
+    min-height: 400px;
+    position: relative;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form {
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    position: relative;
+}
+
+.form h2 {
+    color:  rgb(0,0,0);
+    font-size: 24px;
+    font-weight: 600;
+    position: relative;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+.form h2::before {
+    left: 0;
+    width: 80px;
+    height: 4px;
+    content: "";
+    bottom: -10px;
+    background:#fff;
+    position: absolute;
+}
+
+.form .input__box {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form .input__box input {
+    width: 100%;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    border-radius: 35px;
+    background:rgb(0, 0, 0);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form::placeholder {
+    color: #fff;
+}
+
+.form .input__box input[type="submit"] {
+    color: #666;
+    cursor: pointer;
+    background: #fff;
+    max-width: 100px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.forget {
+    color: #fff;
+    margin-top: 5px;
+}
+
+.forget a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+/* Add this style to your existing CSS */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: #fff;
+}
+
+table, th, td {
+    border: 1px solid #fff;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--home-bg);
+    color: #000;
+    font-weight: bold;
+}
+
+</style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content=" Aditya Tachtode">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link/>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="logo"><img src="" /><span>Lastale</span></a>
+      <nav class="navbar">
+        <ul class="nav-list">
+        <li><a href="index.php" class="nav-link contact-link">Home</a></li>
+          <li><a href="showdata.php" class="nav-link home-link">Userdata</a></li>
+          <li><a href="showactivity.php" class="nav-link home-link">Cookie</a></li>
+          <li><a href="contactrequest.php" class="nav-link contact-link">Remark</a></li>
+          
+        </ul>
+      </nav>
+       </div>
+    </header>
+   <!-- Category -->
+   <?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "oshimataru";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Assuming the user is already logged in, you might get the username from a session variable
+$username = $_SESSION['username']; // Adjust this based on your session handling
+
+// Fetch user activity data
+$sql = "SELECT * FROM activity WHERE username = '$username' ORDER BY timestamp DESC";
+$result = $conn->query($sql);
+
+if ($result === false) {
+    // Handle query error
+    echo "Error: " . $conn->error;
+} elseif ($result->num_rows > 0) {
+    echo "<h2>User Activity</h2>";
+    echo "<table border='1'>";
+    echo "<tr><th>ID</th><th>Username</th><th>Time Spent</th><th>Visited Page</th><th>Timestamp</th></tr>";
+
+    while ($row = $result->fetch_assoc()) {
+        echo "<tr>";
+        echo "<td>" . $row["id"] . "</td>";
+        echo "<td>" . $row["username"] . "</td>";
+        echo "<td>" . $row["time_spent"] . "</td>";
+        echo "<td>" . $row["visited_page"] . "</td>";
+        echo "<td>" . $row["timestamp"] . "</td>";
+        echo "</tr>";
+    }
+
+    echo "</table>";
+} else {
+    echo "<p>No user activity found.</p>";
+}
+
+// Close the database connection
+$conn->close();
+?>
+
+    </body>
+    <div class="pop">
+        <div class="credits"> © Copyright 2023 Aaditya Tachtode All rights reserved.</div></div>
+    <script>
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    </script>
+</html>

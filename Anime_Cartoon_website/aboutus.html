@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <style>
+        html{/*bg color of webpage and font displaying and all*/
+    font-size: 62.5%;
+    overflow-x: hidden;
+    background-color:grey;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}    
+
+
+h1, h2, p, h4{
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    color:black;
+    font-size: 6rem;
+    font-weight: 600;
+}
+
+p{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+p{
+    color: var(--para);
+    font-size: 2.7rem;
+    line-height: 1.6;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+/***************************
+Reusable Codes
+***************************/
+.section{
+    padding: 9rem 0;
+}
+.container{
+    max-width: 140rem;
+    margin: 0 auto;
+}
+.grid{
+    display: grid;
+    gap: 7rem;
+}
+.grid-two-col{
+    grid-template-columns: repeat(2, 1fr);
+}
+.grid-three-col{
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid-four-col{
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.btn:hover, .btn:active{
+    background: var(--heading);
+}
+.primary-heading{
+    font-size: 4.5rem;
+    text-align: center;
+}
+/***************************
+Header
+***************************/
+:root{/*this code is using in various places so its can't be explain*/
+    --heading:white;
+    --white:#fff;
+    --home-bg:#e9f2f7;
+    --btn-bg:#a6efe3;
+    --para:aqua;/*inner categories color*/
+    --bg-1:#f1faf9 ;
+    --bg-2:#f6f7f9;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    --gradinet:linear-gradient(to right, #3bbca7, );
+}
+.header{
+        height: 8rem;
+        padding: 0px 2rem 0 0;
+        background: var(--home-bg);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.3s linear;
+        background-color: rgb(6, 6, 6);
+        
+    }
+/* border of navbar get in dfull line*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+ .logo{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-left: 10px;
+}
+.logo img{
+    height: 4rem;/*logo hight*/
+}
+ .logo span{
+    display: flex;/*logo things color and all*/
+    align-items: center;
+    font-size: 3rem;
+    color:orangered;
+    font-weight: 600;   
+    font-family: 'Cedarville Cursive', cursive;
+
+
+    
+ 
+}
+.header .nav-list{
+    display: flex;
+    align-items: center;/*navbar content get in line*/
+    gap: 4.8rem;
+}
+.header .nav-link:link,
+.header .nav-link:visited{
+    font-size: 1.7rem;
+    font-weight: 500;
+    display: inline-block;
+    text-transform: uppercase;
+    color: var(--para);
+    transition: all 0.3s linear;
+}
+.header .nav-link:hover,
+.header .nav-link:active{
+    color: var(--btn-bg);/* navbar things color fadeing*/
+}
+.header .icons{
+    text-align: center;
+    font-size:2.5rem;
+    font-weight: 500;
+    cursor: pointer;
+}   
+.header .icon{
+    color: var(--btn-bg);
+    background: var(--bg-2);
+    padding: 10px ;
+    border-radius: 0.5rem;
+    transition: all 0.5s ease-in-out;
+} 
+.header .icon:hover{
+    background: var(--heading);
+    color: var(--home-bg);
+}
+/***************************
+footer
+***************************/
+.footer{
+    background: var(--home-bg);
+    transition: all 0.7s linear;
+    padding-bottom: 2rem;
+    background-color: black;
+}
+.footer p{
+    color: var(--heading);
+    margin-bottom: 4rem;
+    text-transform: capitalize;
+}
+.f-about{
+    color: var(--para);
+}
+.f-about p{
+    margin-top: 3rem;
+    margin-left: 2rem;
+}
+.f-links ul,
+.f-service ul,
+.f-address address{
+    display:flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    justify-content: center;
+}
+.f-links li,
+.f-links a,
+.f-service li,
+.f-service a{
+    font-size: 1.8rem;
+    color: var(--para);
+    text-transform: capitalize;
+    transition: all 0.3s linear;
+}
+.f-address a{
+    transition: all 0.3s linear;
+}
+.f-address span,
+.f-links span,
+.f-service span{
+    margin-right: 1rem;
+}
+.f-address a:hover,
+.f-links a:hover,
+.f-service a:hover{
+    margin-left: 1rem;
+    color: var(--btn-bg);
+}
+.f-address p a{
+    color: var(--para);
+}
+.f-social-links{
+    color: var(--btn-bg);
+    text-align: center;
+    margin: 5rem 0;
+}
+.f-social-links .icon{
+    width: 3rem;
+    height: 3rem;
+    color: var(--btn-bg);
+    display: inline-block;
+    padding: 1.4rem;
+    margin: 1rem;
+    border-radius: 50%;
+    border: 1px solid var(--btn-bg);
+    transition: all 0.3s linear;
+}
+.f-social-links .icon:hover{
+    border: 1px solid var(--heading);
+    color: var(--heading);
+}
+.credits{
+    font-size: 2rem;
+    color: var(--para);
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid var(--heading);
+}
+.pop{
+    background: #000;
+    padding-top:20pxpx;
+}
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+
+
+h1 {
+  margin: 0;
+  font-size: xx-large;
+}
+
+.intro, .journey, .credits.container {
+  padding: 50px;
+  text-align: center;
+  font-style:italic;
+}
+
+.center-image {
+    color-interpolation-filters: sRGB;
+  text-align: center;
+  
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+    </style>
+  </head>
+  <body 
+   <header class="header">
+    <a href="./index.html" class="logo"><img src="" /><span class="logoname">Lastale</span></a>
+    <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="./index.html" class="nav-link home-link">Home</a></li>
+                <li><a href="./Trending.html" class="nav-link home-link">Trending</a></li>
+                <li><a href="./movies.html" class="nav-link portfolio-link">Movies</a></li>
+                <li><a href="./maincaterogies.html" class="nav-link about-link">Categories</a></li>
+                <li><a href="./aboutus100.html" class="nav-link about-link">About</a></li>
+                <li><a href="./contactus.html" class="nav-link contact-link">Contact</a></li>
+            </ul>
+          </nav>
+    
+          <div class="icons" style="color: var(--white)">
+            <a href="./login.html"><img src="./images for isssential things/LOGIN1-modified.png"width=50px></a>
+            </div>
+      
+
+
+
+            
+        </header>
+    <main>
+      <section class="intro">
+        <h1>Intro To Our Website </h1>
+        <p>*We Are Here To Provide Free Manga, Anime Now We Are Evolving Ourself Thanks For Visiting Our Website<br>
+           *Otaku: In English-language fandom, fans of anime and manga often use this word to describe themselves. It's important to note, however, that this word has negative connotations in the original Japanese.
+        </p>
+      </section>
+      <section class="center-image">
+        <img src="../project collage/images/lklk.jpg" width="1600px" alt="Image">
+      </section>
+      <section class="journey">
+        <h1>Our Journey</h1>
+        <p>Our Journey Starts from you And It  End's With You</p>
+      </section>
+      <div class="pop">
+        <div class="credits">© Copyright 2023 Aaditya Tachtode All rights reserved.</div></div>
+    </main>
+  </body>
+</html>
