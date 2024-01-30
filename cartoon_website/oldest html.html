@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduLearn</title><meta name="description" content="Educational websites can include websites that have games, videos or topic related resources that act as tools to enhance learning and supplement classroom teaching. These websites help make the process of learning entertaining and attractive to the student, especially in today's age.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Educatinal Website,Front-end">
+    <meta name="author" content=" Aditya Tachtode">
+    <link rel="icon" href="./images/logo.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./phone.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link
+    
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="./index.html" class="logo"><img src="" /><span class="logoname">Lastale</span></a>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="./index.html" class="nav-link home-link">Home</a></li>
+          <li><a href="./Trending.html" class="nav-link home-link">Trending</a></li>
+          <li><a href="./movies.html" class="nav-link portfolio-link">Movies</a></li>
+          <li><a href="./maincaterogies.html" class="nav-link about-link">Categories</a></li>
+          <li><a href="./aboutus100.html" class="nav-link about-link">About</a></li>
+          <li><a href="./contactus.html" class="nav-link contact-link">Contact</a></li>
+          
+</ul>
+      </nav>
+
+      <div class="icons" style="color: var(--white)">
+        <ion-icon name="list-outline" class="icon" id="menu-btn"></ion-icon>
+        <ion-icon name="search-outline" class="icon" id="search-btn"></ion-icon>
+        <!-- <ion-icon name="cart-outline" class="icon" id="cart-btn"></ion-icon> -->
+        <ion-icon name="person-outline" class="icon" id="login-btn"></ion-icon>
+       
+          <a href="./login.html"><img src="./images for isssential things/LOGIN1-modified.png"width=50px></a>
+       
+    
+      </div>
+
+      <!-- <div class="search-form">
+        <form action="">
+          <input
+            type="search"
+            name=""
+            id="search-box"
+            placeholder="search here..."
+          />
+          <label for="search-box"
+            ><ion-icon name="search-outline"></ion-icon
+          ></label>
+        </form>
+      </div>
+
+      <div class="shopping-cart">
+        <h2>No products in the cart.</h2>
+    </div> -->
+
+      <!-- <div class="login-form">
+        <form action="">
+          <h3>Login Now</h3>
+          <input type="email" name="" placeholder="UserName" />
+          <input type="password" name="" placeholder="Password" />
+          <p>forgot your password? <a href="#">click here</a></p>
+          <p>Don't have an account! <a href="#">create now</a></p>
+          <input type="submit" value="Login Now" class="btn" />
+        </form>
+      </div> -->
+    </header>
+    <!-- home section  -->
+    <section class="home-section" id="home-section">
+      <div class="container grid grid-two-col">
+        <div class="home-data">
+          <h1>CONTENT</h1>
+          <p>
+            World-class Manga And Anim
+          </p>
+          <a href="#top-rated" class="btn">Explore all Courses</a>
+        </div>
+        <div class="home-img">
+          <img src="C:\Users\adity\Desktop\project collage\images\LOGO-modified.png"width=525px  alt="" class="home-pic" />
+          <div class="img-bg"></div>
+          <div class="img-bg-1"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about us section 
+    <section class="about-section section" id="about-section">
+      <div class="container grid grid-two-col">
+        <div class="about-img grid grid-two-col">
+          <div class="img-1">
+            <img src="C:\Users\adity\Desktop\project collage\images\naruto.jpg" height="500px"  alt="" />
+          </div>
+          <div class="img-2">
+            <img src="./images/about - 2.jpg" alt="" />
+            <img src="./images/about - 3.jpeg" alt="" />
+          </div>
+        </div>
+       <--- <div class="about-data">
+          <h2>
+            Naruto: Shippuden is an anime series mainly adapted from Part II of Masashi Kishimoto's original manga series, with exactly 500 episodes.
+          </h2>
+          <p>
+
+          </p>
+          <h3>
+            <ion-icon name="checkmark-outline"></ion-icon>
+          </h3>
+          <h3>
+            <ion-icon name="checkmark-outline"></ion-icon>
+          </h3>
+          <h3>
+            <ion-icon name="checkmark-outline"></ion-icon>
+          </h3>
+          <a href=""><ion-icon name="play"></ion-icon>Play Now</a>
+        </div>
+      </div>
+    </section>-->
+
+    <!-- top rated learning tutorials -->
+    <section class="top-rated section" id="top-rated">
+      <h1 class="primary-heading">Top Rated Trainding</h1>
+      <div class="container">
+        <div class="top-btn">
+          <div class="btn t-btn" data-btn-num="0">all</div>
+          <div class="btn t-btn" data-btn-num="1">Adventure</div>
+          <div class="btn t-btn" data-btn-num="2">Fantasy</div>
+          <div class="btn t-btn" data-btn-num="3">True Story</div>
+          <div class="btn t-btn" data-btn-num="4">lifestyle</div>
+          <div class="btn t-btn" data-btn-num="5">Slice Of Life</div>
+          <div class="btn t-btn" data-btn-num="4">Horror</div>
+          <div class="btn t-btn" data-btn-num="4">TIme Travelling</div>
+          <div class="btn t-btn" data-btn-num="">More</div>
+        </div>
+
+        <div class="tutorials grid grid-four-col">
+          <!-- start -->
+          <div class="course t-btn--0 t-btn--1">
+            <div class="cou-img">
+              <a href="https://mangareader.to/read/one-piece-3/en/chapter-1"><img src="../project collage/images/onepiece.jpg" width=290px alt="" /></a>
+            </div>
+            <div class="cou-data">
+              <div class="cou-top">
+                <a href="#">One Piece</a>
+                
+              </div>
+              <p href="#" class="top-heading">
+                <img src="../1.png" width="200px" alt="">
+              </p>
+              <div class="instructor " >
+                <img src="./images/profile - 1.jpg" alt="" />
+                <p class="center"></p>
+              </div>
+              <div class="review">
+                <div class="user">
+                  <ion-icon name="person-outline"></ion-icon>
+                  <p>999+</p>
+                </div>
+                <div class="user">
+                  <ion-icon name="book-outline"></ion-icon>
+                  <p>999+</p>
+                </div>
+                <div class="stars">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half "></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
+          <!-- start -->
+          <div class="course t-btn--0 t-btn--2">
+            <div class="cou-img">
+              <img src="../project collage/images/demonslayer.jpg"width=290px alt="" />
+            </div>
+            <div class="cou-data">
+              <div class="cou-top">
+                <a href="#">Demon Slayer</a>
+                <p></p>
+              </div>
+              <p href="#" class="top-heading"></p>
+              <div class="instructor">
+                <img src="./images/profile - 2.jpeg" alt="" />
+                <p class="center"></p>
+              </div>
+              <div class="review">
+                <div class="user">
+                  <ion-icon name="person-outline"></ion-icon>
+                  <p>22</p>
+                </div>
+                <div class="user">
+                  <ion-icon name="book-outline"></ion-icon>
+                  <p>20</p>
+                </div>
+                <div class="stars">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <!-- <ion-icon name="star-half"></ion-icon> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
+          <!-- start -->
+          <div class="course t-btn--0 t-btn--3">
+            <div class="cou-img">
+              <img src="../project collage/images/onepunchman.jpg"width=290px alt="" />
+            </div>
+            <div class="cou-data">
+              <div class="cou-top">
+                <a href="#">One Punch Man</a>
+                <p></p>
+              </div>
+              <p href="#" class="top-heading">
+              </p>
+              <div class="instructor">
+                <img src="./images/profile - 3.jpg" alt="" />
+                <p></p>
+              </div>
+              <div class="review">
+                <div class="user">
+                  <ion-icon name="person-outline"></ion-icon>
+                  <p>52</p>
+                </div>
+                <div class="user">
+                  <ion-icon name="book-outline"></ion-icon>
+                  <p>60</p>
+                </div>
+                <div class="stars">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <!-- <ion-icon name="star"></ion-icon> -->
+                  <ion-icon name="star-half"></ion-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
+          <!-- start -->
+          <div class="course t-btn--0 t-btn--4">
+            <div class="cou-img">
+              <img src="../project collage/images/chainsaw.jpg"width=290px alt="" />
+            </div>
+            <div class="cou-data">
+              <div class="cou-top">
+                <a href="#">Chainsaw Man</a>
+                <p></p>
+              </div>
+              <p href="#" class="top-heading">
+              </p>
+              <div class="instructor">
+                <img src="./images/profile - 2.jpeg" alt="" />
+                <p></p>
+              </div>
+              <div class="review">
+                <div class="user">
+                  <ion-icon name="person-outline"></ion-icon>
+                  <p>29</p>
+                </div>
+                <div class="user">
+                  <ion-icon name="book-outline"></ion-icon>
+                  <p>56</p>
+                </div>
+                <div class="stars">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <!-- <ion-icon name="star-half"></ion-icon> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
+          <!-- start -->
+          <div class="course t-btn--0 t-btn--4">
+            <div class="cou-img">
+              <img src="../project collage/images/jujutsu.jpg"width=290px alt="" />
+            </div>
+            <div class="cou-data">
+              <div class="cou-top">
+                <a href="#">Jujutsu Kiason</a>
+                <p></p>
+              </div>
+              <p href="#" class="top-heading">
+              </p>
+              <div class="instructor">
+                <img src="./images/profile - 2.jpeg" alt="" />
+                <p></p>
+              </div>
+              <div class="review">
+                <div class="user">
+                  <ion-icon name="person-outline"></ion-icon>
+                  <p>10</p>
+                </div>
+                <div class="user">
+                  <ion-icon name="book-outline"></ion-icon>
+                  <p>56</p>
+                </div>
+                <div class="stars">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <!-- <ion-icon name="star-half"></ion-icon> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
+          <!-- start -->
+          <div class="course t-btn--0 t-btn--4">
+            <div class="cou-img">
+              <img src="../project collage/images/vinlandsaga.jpg"width=290px alt="" />
+            </div>
+            <div class="cou-data">
+              <div class="cou-top">
+                <a href="#">Vinland Saga</a>
+                <p></p>
+              </div>
+              <p href="#" class="top-heading">
+                
+              </p>
+              <div class="instructor">
+                <img src="./images/profile - 3.jpg" alt="" />
+                <p></p>
+              </div>
+              <div class="review">
+                <div class="user">
+                  <ion-icon name="person-outline"></ion-icon>
+                  <p>29</p>
+                </div>
+                <div class="user">
+                  <ion-icon name="book-outline"></ion-icon>
+                  <p>56</p>
+                </div>
+                <div class="stars">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <!-- <ion-icon name="star-half"></ion-icon> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
+          <!-- start -->
+          <div class="course t-btn--0 t-btn--1">
+            <div class="cou-img">
+              <img src="../project collage/images/narutoshippudens.jpg"width=290px alt="" />
+            </div>
+            <div class="cou-data">
+              <div class="cou-top">
+                <a href="#">Naruto:Shippuden</a>
+                <p></p>
+              </div>
+              <p href="#" class="top-heading"></p>
+              <div class="instructor">
+                <img src="./images/profile - 1.jpg" alt="" />
+                <p></p>
+              </div>
+              <div class="review">
+                <div class="user">
+                  <ion-icon name="person-outline"></ion-icon>
+                  <p>19</p>
+                </div>
+                <div class="user">
+                  <ion-icon name="book-outline"></ion-icon>
+                  <p>26</p>
+                </div>
+                <div class="stars">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <!-- <ion-icon name="star-half"></ion-icon> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
+          <!-- start -->
+          <div class="course t-btn--0 t-btn--2">
+            <div class="cou-img">
+              <img src="../project collage/images/takagisan.jpg"width=290px alt="" />
+            </div>
+            <div class="cou-data">
+              <div class="cou-top">
+                <a href="#">Takagi-san</a>
+                <p></p>
+              </div>
+              <p href="#" class="top-heading"></p>
+              <div class="instructor">
+                <img src="./images/profile - 3.jpg" alt="" />
+                <p></p>
+              </div>
+              <div class="review">
+                <div class="user">
+                  <ion-icon name="person-outline"></ion-icon>
+                  <p>12</p>
+                </div>
+                <div class="user">
+                  <ion-icon name="book-outline"></ion-icon>
+                  <p>26</p>
+                </div>
+                <div class="stars">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <!-- <ion-icon name="star-half"></ion-icon> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
+        </div>
+      </div>
+    </section>
+    <!-- Category -->
+    <section class="cat-section section" id="cat-section">
+      <h1 class="primary-heading">Featured topics by category</h1>
+      <div class="container grid grid-four-col">
+        <div class="category">
+          <img src="../project collage/images/chainsaw.jpg" alt="" />
+          <h3>Blood</h3>
+        </div>
+        <div class="category">
+          <img src="../project collage/images/lejendofexorcism.jpg" alt="" />
+          <h3>Aniciant</h3>
+        </div>
+        <div class="category">
+          <img src="../project collage/images/bakithegrapler.jpg" alt="" />
+          <h3>RAW Power</h3>
+        </div><br>
+        <div class="category">
+          <img src="../project collage/images/redentialevil.jpg" alt="" />
+          <h3>Apocalypse</h3>
+        </div>
+        <div class="category">
+          <img src="../project collage/images/lasthope.jpg" alt="" />
+          <h3>Sci-Fi</h3>
+        </div>
+        <div class="category">
+          <img src="../project collage/images/hellsing.jpg" alt="" />
+          <h3>Action</h3>
+        </div><br>
+        <div class="category">
+          <img src="../project collage/images/7seeds.jpg" alt="" />
+          <h3>Futurestic</h3>
+        </div>
+        <div class="category">
+          <img src="../project collage/images/komicantcommunicate.jpg" alt="" />
+          <h3>love</h3>
+        </div>
+        <div class="category">
+          <img src="../project collage/images/finnestassassingetreincarnatr.jpg" alt="" />
+          <h3>Gods & Devils</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Details -->
+    <section class="det-section section" id="det-section">
+      <h1 class="primary-heading">
+        YOU ARE ON A WRITE PLACE YEP YOU ARE
+      </h1>
+      <div class="container det grid grid-three-col">
+        <div class="details">
+          <img src="../project collage/images/zoro.jpg" alt="" />
+          <h2>RORONOA ZORO</h2>
+          <p>
+            Scars on the back are a swordsman's shame
+          </p>
+        </div>
+        <div class="details">
+          <img src="../project collage/images/luffytaro.jpg"width=230 alt="" />
+          <h2>MONKEY.D.LUFFY</h2>
+          <p>
+            I don't have to be a boss or a great pirate, do I?
+          </p>
+        </div>
+        <div class="details">
+          <img src="../project collage/images/madara.jpg"width=275 alt="" />
+          <h2>MADARA UCHIHA</h2>
+          <p>
+            The concept of hope is nothing more than giving up.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimonials -->
+    <!-- <section class="testimonial section" id="testimonial">
+      <h1 class="primary-heading">SOME BEST QUOTES</h1>
+      <div class="container"> -->
+        <!-- Swiper -->
+        <!-- <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide grid-two-col grid">
+              <img src="../project collage/images/madara.jpg" alt="" />
+              <div class="test-data">
+                <h3>
+                In this world, wherever there is light, there are always shadows. As long as there is a concept of victors, the vanquished will also exist. The selfish desire for peace gives rise to war. And hatred is born in order to protect love.
+                </h3>
+                <h2>MADARA UCHIHA</h2>
+                <p>Student</p>
+              </div>
+            </div>
+            <div class="swiper-slide grid-two-col grid">
+              <img src="../project collage/images/pain.png" alt="" />
+              <div class="test-data">
+                <h3>
+                  The most painful thing is losing yourself in the process of loving someone too much, and forgetting that you are special too.” “There are wounds that never show on the body that are deeper and more hurtful than anything that bleeds.
+                </h3>
+                <h2>Pain</h2>
+                <p>Student</p>
+              </div>
+            </div>
+            <div class="swiper-slide grid-two-col grid">
+              <img src="./images/test - 3.jpg" alt="" />
+              <div class="test-data">
+                <h3>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Harum est ipsa illum recusandae. Doloribus corporis earum
+                  molestiae quia consequatur voluptatibus.
+                </h3>
+                <h2>James Smith</h2>
+                <p>Student</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>-->
+      <!-- Work Number Count Section  -->
+     
+    </section>
+
+    <!-- blog -->
+    <section class="blog section" id="blog">
+      <h1 class="primary-heading">ALL TIME FAVORTE MOVIES</h1>
+      <div class="container grid grid-three-col">
+        <div class="news">
+          <img src="../project collage/images/YOURNAME.jpg" alt="" />
+          <div class="news-data">
+            <div class="user-name">
+              <div class="user">
+                <ion-icon name="person-outline"></ion-icon>
+                <p>Your Name</p>
+                
+              </div>
+            </div>
+            <p>
+              Your Name is a 2016 Japanese animated romantic fantasy film produced by CoMix Wave Films. It follows two high school students, a boy named Taki and a girl ...
+            </p>
+          </div>
+        </div>
+        <div class="news">
+          <img src="../project collage/images/iwanttoeatyour.jpg" height="613" alt="" />
+          <div class="news-data">
+            <div class="user-name">
+              <div class="user">
+                <ion-icon name="person-outline"></ion-icon>
+                <p>I WANT TO EAT YOUR PANCREAS</p>
+              </div>
+              <div class="user">
+              
+              </div>
+            </div>
+            
+            <p>
+              'I want to eat your pancreas' is about a young girl named Sakura who was diagnosed with a pancreatic illness, and told she had only a little time left to live. 
+            </p>
+          </div>
+        </div>
+        <div class="news">
+          <img src="../project collage/images/ASILENTVOICE.jpg" alt="" />
+          <div class="news-data">
+            <div class="user-name">
+              <div class="user">
+                <ion-icon name="person-outline"></ion-icon>
+                <p>A SILENT VOICE</p>
+              </div>
+              <div class="user">
+                
+                
+              </div>
+            </div>
+            <p>
+              A Silent Voice. When it comes to contemporary anime there is likely none more emotional than A Silent Voice
+            </p>
+          </div>
+        </div>
+      </div>
+
+    <div class="container ads grid grid-two-col ">
+          <!--  <div class="ad-data">
+            <p>IF YOU START THEN THERE IS NO END</p>
+            <p>"It's Not Bad To Dream. But You Also Have To Consider What's Realistic."</p>
+            <a href="#" class="btn">Click to Read Manga</a>
+          </div> -->
+          <div class="ad-img">
+           <!-- <img src="../project collage/images/chainsaw.jpg"width=250px alt="">
+      </div> -->
+    </section>
+
+    <!-- contact  -->
+    <section class="contact-section section" id="contact-section">
+        <h1 class="primary-heading">Get Support from our Team</h1>
+        <div class="container boxes grid grid-three-col ">
+            <div class="contact-box">
+                <ion-icon name="call-outline"></ion-icon>
+                <h2>Telephone</h2>
+                <p>+919970912220</p>
+                <p></p>
+            </div>
+            <div class="contact-box">
+                <ion-icon name="mail-outline"></ion-icon>
+                <h2>Our Mail</h2>
+                <p>OSHIMATARU@REDIFFMAIL.COM</p>
+                <p>OSHIMATARU@GMAIL.COM</p>
+            </div>
+            <div class="contact-box">
+                <ion-icon name="location-outline"></ion-icon>
+                <h2>Location</h2>
+                <p>Chakan,kanchi encleve L-303</p>
+                <p>Maharashtra, India</p>
+            </div>
+        </div>
+            </form>
+        </div>
+        <div class="login-form">
+          <form action="">
+            <h3>Login Now</h3>
+            <input type="email" name="" placeholder="UserName" />
+            <input type="password" name="" placeholder="Password" />
+            <p>forgot your password? <a href="#">click here</a></p>
+            <p>Don't have an account! <a href="#">create now</a></p>
+            <input type="submit" value="Login Now" class="btn" />
+          </form>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <Footer class="section footer">
+        <div class="container grid grid-four-col">
+            <div class="f-about">
+                <a href="#" class="logo"><img src="../project collage/images/zoro.jpg" alt="Main-Logo" /><span>Oshimataru</span></a>
+                <p>We Provide Free Anime And Manga </p><br>
+                <div class="f-social-links">
+                    <a href="https://www.instagram.com/?hl=e" target="_blank"><ion-icon class="icon" name="logo-instagram"></ion-icon></a>
+                    <a href="https://www.facebook.com/" target="_blank"><ion-icon class="icon" name="logo-facebook"></ion-icon></a>
+                    <a href="https://discord.com/" target="_blank"><ion-icon class="icon" name="logo-discord"></ion-icon></a>
+                </div>
+            </div>
+
+            <div class="f-links">
+                <h3>LETS PASS THE TIME</h3>
+                <ul>
+                    <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#home-section">Home</a></li>
+                    <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#about-section">About</a></li>
+                    <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#top-rated">course</a></li>
+                    <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#blog">blog</a></li>
+                    <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#contact-section">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="f-service">
+                <h3>UseFul Links</h3>
+                <ul>
+                    <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#portfolio-section">MANGA</a></li>
+                    <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#portfolio-section">VIDeo</a></li>
+                    <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#portfolio-section">technology</a></li>
+                    <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#portfolio-section">medical</a></li>
+                    <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#portfolio-section">Food & recipe</a></li>
+                    <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#portfolio-section">language</a></li>
+                </ul>
+            </div>
+
+            <div class="f-address"> 
+                <h3>Have a Questions?</h3>
+                <address>
+                  <div>
+                    <p><span><ion-icon name="location-outline"></ion-icon></span> <a href="https://goo.gl/maps/egiuCAXr4Xpg5F3z8">Maharashtra, INDIA</a> </p>
+                  </div>    
+                  <div>
+                    <p><span><ion-icon name="call-outline"></ion-icon></span> <a href="tel:+91987654321">9970712220</a></p>
+                  </div>
+                  <div>
+                    <p><span><ion-icon name="mail-outline"></ion-icon></span> <a href="mailto:info@nevillejarvis.com">oshimataru@rediffmail.com </a> </p>
+                  </div>
+                </address>
+              </div>
+
+        </div>
+
+            <div class="credits"> © Copyright 2023 Aaditya Tachtode All rights reserved.</div>
+            <div class="scrollTop-style">
+                <ion-icon name="arrow-up-outline" class="scroll-top"></ion-icon>
+            </div>
+    </Footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

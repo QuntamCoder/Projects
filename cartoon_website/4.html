@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+/***************************
+category
+***************************/
+.cat-section .container{
+    margin-top: 7rem;
+}
+.cat-section .container.grid{
+    gap: 3rem;
+}
+.category{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background: var(--heading);
+    padding: 3rem ;/*padding of blocks*/
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    background-color:#000;
+}
+.category:hover{
+    background:#7d98a1;
+}
+
+.category img{/*image sizeing*/
+    max-width:22rem;
+    margin-right: 20rem;
+}
+.category h3{/*categories anime name font and there color and displaying fonts*/
+    font-size:3rem;
+    font-weight: 200;
+    color: var(--white);
+    text-transform: capitalize;
+}
+:root{/*this code is using in various places so its can't be explain*/
+    --heading:white;
+    --white:#fff;
+    --home-bg:#e9f2f7;
+    --btn-bg:#a6efe3;
+    --para:aqua;/*inner categories color*/
+    --bg-1:#f1faf9 ;
+    --bg-2:#f6f7f9;
+    --box-shadow:black;
+    --gradinet:linear-gradient(to right, #3bbca7, );
+}
+html{/*bg color of webpage and font displaying and all*/
+    font-size: 62.5%;
+    overflow-x: hidden;
+    background-color:#36454f;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}    
+
+html::-webkit-scrollbar-track{
+        background: var(--white);
+}
+html::-webkit-scrollbar-thumb{
+        background: var(--btn-bg);
+}
+h1, h2, h3, h4{
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    color:black;
+    font-size: 6rem;
+    font-weight: 600;
+    text-shadow:gray;
+}
+
+h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+p{
+    color: var(--para);
+    font-size: 2.7rem;
+    line-height: 1.6;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    text-align:left;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+/***************************
+Reusable Codes
+***************************/
+.section{
+    padding: 9rem 0;
+}
+.container{
+    max-width: 140rem;
+    margin: 0 auto;
+}
+.grid{
+    display: grid;
+    gap: 9rem;
+}
+
+.btn{
+    background: var(--btn-bg);
+    padding: 1.6rem 3.2rem;
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--white);
+    display: inline-block;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.btn:hover, .btn:active{
+    background: var(--heading);
+}
+.primary-heading{
+    font-size: 4.5rem;
+    text-align: center;
+}
+/***************************
+Header
+***************************/
+.header{
+        height: 8rem;
+        padding: 0px 2rem 0 0;
+        background: var(--home-bg);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.3s linear;
+        background-color: rgb(6, 6, 6);
+        
+    }
+
+/* border of navbar get in dfull line*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+ .logo{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-left: 10px;
+}
+.logo img{
+    height: 4rem;/*logo hight*/
+}
+ .logo span{
+    display: flex;/*logo things color and all*/
+    align-items: center;
+    font-size: 3rem;
+    color:aqua;
+    font-weight: 600;
+    font-family: 'Cedarville Cursive', cursive;
+}
+.header .nav-list{
+    display: flex;
+    align-items: center;/*navbar content get in line*/
+    gap: 4.8rem;
+}
+.header .nav-link:link,
+.header .nav-link:visited{
+    font-size: 1.7rem;
+    font-weight: 500;
+    display: inline-block;
+    text-transform: uppercase;
+    color: var(--para);
+    transition: all 0.3s linear;
+}
+.header .nav-link:hover,
+.header .nav-link:active{
+    color: var(--btn-bg);/* navbar things color fadeing*/
+}
+.header .icons{
+    text-align: center;
+    font-size:2.5rem;
+    font-weight: 500;
+    cursor: pointer;
+}   
+.header .icon{
+    color: var(--btn-bg);
+    background: var(--bg-2);
+    padding: 10px ;
+    border-radius: 0.5rem;
+    transition: all 0.5s ease-in-out;
+} 
+.header .icon:hover{
+    background: var(--heading);
+    color: var(--home-bg);
+}
+.h4{
+    text-align: center;
+    text-decoration:black;
+}
+.pop{
+    background: #000;
+    padding-bottom: 20px;
+}
+/***************************
+footer
+***************************/
+.credits{
+    font-size: 2rem;
+    color: var(--para);
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid var(--heading);
+}
+
+
+  </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content=" Aditya Tachtode">
+  <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+
+    <link
+    
+      
+     
+    />
+  </head>
+  <body>
+    <header class="header">
+        <a href="./index.html" class="logo"><img src="" /><span class="logoname">Lastale</span></a>
+        <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="./index.html" class="nav-link home-link">Home</a></li>
+            <li><a href="./Trending.html" class="nav-link home-link">Trending</a></li>
+            <li><a href="./movies.html" class="nav-link portfolio-link">Movies</a></li>
+            <li><a href="./maincaterogies.html" class="nav-link about-link">Categories</a></li>
+            <li><a href="./aboutus100.html" class="nav-link about-link">About</a></li>
+            <li><a href="./contactus.html" class="nav-link contact-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="icons" style="color: var(--white)">
+        <a href="./login.html"><img src="./images for isssential things/LOGIN1-modified.png"width=50px></a>
+        </div>
+  
+    </header>
+   <!-- Category -->
+    <section class="cat-section section" id="cat-section">
+      <b></b><h1 class="primary-heading">Fantasy</h1>
+      <div class="container grid grid-four-col">
+       
+        
+          <div class="category">
+            <a href="../project collage/demon slayer1.html"><img src="./images for isssential things/naeutoold.jpeg" alt="" /></a>
+            <a href="../project collage/onepiecepage1.html"><p>1:Naruto</p><h3>"Naruto (Classic): Adventure anime chronicling the journey of a young ninja named Naruto Uzumaki as he seeks recognition and dreams of becoming Hokage."</h3></a>
+          </div>   
+          <div class="category">
+            <a href="../project collage/chainsawman1.html"><img src="./images for isssential things/imking.jpeg" alt="" /></a>
+            <a href="../project collage/chainsawman1.html"><p>2:Daily Life Of Imortal King</p><h3>"Daily Life of the Immortal King: Fantasy anime portraying a powerful cultivator's attempt to live a low-key life while navigating school and supernatural challenges."</h3></a>
+          </div>
+          <div class="category">
+            <a href="../project collage/onepiecepage1.html"><img src="./images for isssential things/demonslayer.jpeg" alt="" /></a>
+           <a href="../project collage/onepiecepage1.html"><p>3:Demon Slayer</p><h3>"Demon Slayer (Kimetsu no Yaiba): Action-packed anime following a young swordsman's quest to avenge his family and save his sister from demons."</h3></a>
+          </div>  
+          <div class="category">
+            <a href="../project collage/one punch man.html"><img src="./images for isssential things/voilet evergarden.jpeg" alt="" /></a>
+            <a href="../project collage/one punch man.html"><p>4:Voilet Evergarden</p><h3>"Violet Evergarden: Emotionally resonant anime about a former soldier turned auto memory doll, exploring human emotions and connections through letters."</h3></a>
+          </div> 
+    </div></section>
+    <div class="pop">
+        <div class="credits"> © Copyright 2023 Aaditya Tachtode All rights reserved.</div></div>  
+    <script>
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    </script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html> 

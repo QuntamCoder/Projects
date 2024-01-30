@@ -1,0 +1,8 @@
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">.logo span{
+    display: flex;/*logo things color and all*/
+    align-items: center;
+    font-size: 3rem;
+    color:#3bbca7;
+    font-weight: 600;/*logo name zise and color*/
+    font-family: 'Cedarville Cursive', cursive;
+}
